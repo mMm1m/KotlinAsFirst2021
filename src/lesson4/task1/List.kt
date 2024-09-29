@@ -127,11 +127,7 @@ fun abs(v: List<Double>): Double = TODO()
  *
  * Рассчитать среднее арифметическое элементов списка list. Вернуть 0.0, если список пуст
  */
-<<<<<<< HEAD
 fun mean(list: List<Double>): Double = if (list.isNotEmpty()) list.sum() / list.size else 0.0
-=======
-fun mean(list: List<Double>): Double = TODO()
->>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Средняя (3 балла)
@@ -141,15 +137,11 @@ fun mean(list: List<Double>): Double = TODO()
  *
  * Обратите внимание, что данная функция должна изменять содержание списка list, а не его копии.
  */
-<<<<<<< HEAD
 fun center(list: MutableList<Double>): MutableList<Double> {
     val avg = mean(list)
     for (i in 0 until list.size) list[i] -= avg
     return list
 }
-=======
-fun center(list: MutableList<Double>): MutableList<Double> = TODO()
->>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Средняя (3 балла)
@@ -180,7 +172,6 @@ fun polynom(p: List<Int>, x: Int): Int = TODO()
  *
  * Обратите внимание, что данная функция должна изменять содержание списка list, а не его копии.
  */
-<<<<<<< HEAD
 fun accumulate(list: MutableList<Int>): MutableList<Int> {
     var sum = 0
     for (i in 0 until list.size) {
@@ -190,9 +181,6 @@ fun accumulate(list: MutableList<Int>): MutableList<Int> {
     }
     return list
 }
-=======
-fun accumulate(list: MutableList<Int>): MutableList<Int> = TODO()
->>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Средняя (3 балла)
@@ -201,7 +189,6 @@ fun accumulate(list: MutableList<Int>): MutableList<Int> = TODO()
  * Результат разложения вернуть в виде списка множителей, например 75 -> (3, 5, 5).
  * Множители в списке должны располагаться по возрастанию.
  */
-<<<<<<< HEAD
 fun factorize(n: Int): List<Int> {
     val divisors = mutableListOf<Int>()
     var d = 2
@@ -215,9 +202,6 @@ fun factorize(n: Int): List<Int> {
     }
     return divisors
 }
-=======
-fun factorize(n: Int): List<Int> = TODO()
->>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Сложная (4 балла)
@@ -226,11 +210,7 @@ fun factorize(n: Int): List<Int> = TODO()
  * Результат разложения вернуть в виде строки, например 75 -> 3*5*5
  * Множители в результирующей строке должны располагаться по возрастанию.
  */
-<<<<<<< HEAD
 fun factorizeToString(n: Int): String = factorize(n).joinToString(separator = "*")
-=======
-fun factorizeToString(n: Int): String = TODO()
->>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Средняя (3 балла)
@@ -239,7 +219,6 @@ fun factorizeToString(n: Int): String = TODO()
  * Результат перевода вернуть в виде списка цифр в base-ичной системе от старшей к младшей,
  * например: n = 100, base = 4 -> (1, 2, 1, 0) или n = 250, base = 14 -> (1, 3, 12)
  */
-<<<<<<< HEAD
 fun convert(n: Int, base: Int): List<Int> {
     var x = n
     val result = mutableListOf<Int>()
@@ -250,9 +229,6 @@ fun convert(n: Int, base: Int): List<Int> {
     }
     return result.reversed()
 }
-=======
-fun convert(n: Int, base: Int): List<Int> = TODO()
->>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Сложная (4 балла)
@@ -265,15 +241,10 @@ fun convert(n: Int, base: Int): List<Int> = TODO()
  * Использовать функции стандартной библиотеки, напрямую и полностью решающие данную задачу
  * (например, n.toString(base) и подобные), запрещается.
  */
-<<<<<<< HEAD
 
 fun convertToString(n: Int, base: Int): String = TODO()
 
 
-=======
-fun convertToString(n: Int, base: Int): String = TODO()
-
->>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 /**
  * Средняя (3 балла)
  *
@@ -295,7 +266,6 @@ fun decimal(digits: List<Int>, base: Int): Int = TODO()
  * Использовать функции стандартной библиотеки, напрямую и полностью решающие данную задачу
  * (например, str.toInt(base)), запрещается.
  */
-<<<<<<< HEAD
 fun decimalFromString(str: String, base: Int): Int {
     var result = 0
     for (i in str.indices) {
@@ -305,9 +275,6 @@ fun decimalFromString(str: String, base: Int): Int {
     }
     return result
 }
-=======
-fun decimalFromString(str: String, base: Int): Int = TODO()
->>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Сложная (5 баллов)
@@ -317,7 +284,6 @@ fun decimalFromString(str: String, base: Int): Int = TODO()
  * 90 = XC, 100 = C, 400 = CD, 500 = D, 900 = CM, 1000 = M.
  * Например: 23 = XXIII, 44 = XLIV, 100 = C
  */
-<<<<<<< HEAD
 val tens = arrayOf("X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC")
 val hundreds = arrayOf("C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM")
 val thousands = arrayOf("M", "MM", "MMM")
@@ -348,9 +314,6 @@ fun roman(n: Int): String {
     return result.joinToString(separator = "")
 }
 
-=======
-fun roman(n: Int): String = TODO()
->>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Очень сложная (7 баллов)
@@ -359,7 +322,6 @@ fun roman(n: Int): String = TODO()
  * Например, 375 = "триста семьдесят пять",
  * 23964 = "двадцать три тысячи девятьсот шестьдесят четыре"
  */
-<<<<<<< HEAD
 val digitsFirst = arrayOf("одна", "две", "три", "четыре", "пять", "шесть", "семь", "восемь",
 "девять")
 val digitsSecond = arrayOf("десять", "двадцать", "тридцать", "сорок", "пятьдесят", "шестьдесят",
@@ -405,6 +367,3 @@ fun builder(n: Int): List<String> {
 
 fun russian(n: Int): String = builder(n).joinToString(separator = " ")
 
-=======
-fun russian(n: Int): String = TODO()
->>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
