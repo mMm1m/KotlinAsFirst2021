@@ -2,9 +2,12 @@
 
 package lesson6.task1
 
+<<<<<<< HEAD
 import java.lang.IllegalArgumentException
 import java.lang.NumberFormatException
 
+=======
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 // Урок 6: разбор строк, исключения
 // Максимальное количество баллов = 13
 // Рекомендуемое количество баллов = 11
@@ -117,6 +120,7 @@ fun flattenPhoneNumber(phone: String): String = TODO()
  * Прочитать строку и вернуть максимальное присутствующее в ней число (717 в примере).
  * При нарушении формата входной строки или при отсутствии в ней чисел, вернуть -1.
  */
+<<<<<<< HEAD
 
 fun bestLongJump(jumps: String): Int {
     var bestJump = -1
@@ -131,6 +135,9 @@ fun bestLongJump(jumps: String): Int {
     }
     return bestJump
 }
+=======
+fun bestLongJump(jumps: String): Int = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Сложная (6 баллов)
@@ -154,6 +161,7 @@ fun bestHighJump(jumps: String): Int = TODO()
  * Вернуть значение выражения (6 для примера).
  * Про нарушении формата входной строки бросить исключение IllegalArgumentException
  */
+<<<<<<< HEAD
 fun plusMinus(expression: String): Int {
     val parts = expression.split(" ")
     if (parts[0].contains('+') || parts[0].contains('-')) throw IllegalArgumentException()
@@ -180,6 +188,9 @@ fun isNumber(str: String): Boolean {
     }
     return true
 }
+=======
+fun plusMinus(expression: String): Int = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Сложная (6 баллов)
@@ -192,7 +203,10 @@ fun isNumber(str: String): Boolean {
  */
 fun firstDuplicateIndex(str: String): Int = TODO()
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 /**
  * Сложная (6 баллов)
  *

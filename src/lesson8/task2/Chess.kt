@@ -2,9 +2,12 @@
 
 package lesson8.task2
 
+<<<<<<< HEAD
 import lesson8.task3.Graph
 import java.lang.Math.abs
 
+=======
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 /**
  * Клетка шахматной доски. Шахматная доска квадратная и имеет 8 х 8 клеток.
  * Поэтому, обе координаты клетки (горизонталь row, вертикаль column) могут находиться в пределах от 1 до 8.
@@ -25,7 +28,11 @@ data class Square(val column: Int, val row: Int) {
      * В нотации, колонки обозначаются латинскими буквами от a до h, а ряды -- цифрами от 1 до 8.
      * Для клетки не в пределах доски вернуть пустую строку
      */
+<<<<<<< HEAD
     fun notation(): String = if (!inside()) "" else 'a' - 1 + column + "$row"
+=======
+    fun notation(): String = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 }
 
 /**
@@ -35,11 +42,15 @@ data class Square(val column: Int, val row: Int) {
  * В нотации, колонки обозначаются латинскими буквами от a до h, а ряды -- цифрами от 1 до 8.
  * Если нотация некорректна, бросить IllegalArgumentException
  */
+<<<<<<< HEAD
 fun square(notation: String): Square =
     if (notation.length == 2 && notation[1] in '1'..'8' && notation[0] in 'a'..'h') Square(
         notation[0] - 'a' + 1,
         notation[1].digitToInt()
     ) else throw IllegalArgumentException()
+=======
+fun square(notation: String): Square = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Простая (2 балла)
@@ -64,6 +75,7 @@ fun square(notation: String): Square =
  * Пример: rookMoveNumber(Square(3, 1), Square(6, 3)) = 2
  * Ладья может пройти через клетку (3, 3) или через клетку (6, 1) к клетке (6, 3).
  */
+<<<<<<< HEAD
 fun rookMoveNumber(start: Square, end: Square): Int {
     var result = 0
     if (start.inside() && end.inside()) {
@@ -73,6 +85,9 @@ fun rookMoveNumber(start: Square, end: Square): Int {
     } else throw IllegalArgumentException()
     return result
 }
+=======
+fun rookMoveNumber(start: Square, end: Square): Int = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Средняя (3 балла)
@@ -88,6 +103,7 @@ fun rookMoveNumber(start: Square, end: Square): Int {
  *          rookTrajectory(Square(3, 5), Square(8, 5)) = listOf(Square(3, 5), Square(8, 5))
  * Если возможно несколько вариантов самой быстрой траектории, вернуть любой из них.
  */
+<<<<<<< HEAD
 fun rookTrajectory(start: Square, end: Square): List<Square> {
     val result = mutableListOf<Square>(start)
     if (start == end) return result
@@ -95,6 +111,9 @@ fun rookTrajectory(start: Square, end: Square): List<Square> {
     result.add(end)
     return result
 }
+=======
+fun rookTrajectory(start: Square, end: Square): List<Square> = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Простая (2 балла)
@@ -119,6 +138,7 @@ fun rookTrajectory(start: Square, end: Square): List<Square> {
  * Примеры: bishopMoveNumber(Square(3, 1), Square(6, 3)) = -1; bishopMoveNumber(Square(3, 1), Square(3, 7)) = 2.
  * Слон может пройти через клетку (6, 4) к клетке (3, 7).
  */
+<<<<<<< HEAD
 fun bishopMoveNumber(start: Square, end: Square): Int {
     if (!(start.inside() && end.inside())) throw IllegalArgumentException()
     return when {
@@ -128,6 +148,9 @@ fun bishopMoveNumber(start: Square, end: Square): Int {
         else -> 2
     }
 }
+=======
+fun bishopMoveNumber(start: Square, end: Square): Int = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Сложная (5 баллов)
@@ -169,12 +192,16 @@ fun bishopTrajectory(start: Square, end: Square): List<Square> = TODO()
  * Пример: kingMoveNumber(Square(3, 1), Square(6, 3)) = 3.
  * Король может последовательно пройти через клетки (4, 2) и (5, 2) к клетке (6, 3).
  */
+<<<<<<< HEAD
 fun kingMoveNumber(start: Square, end: Square): Int {
     if (!start.inside() || !end.inside()) throw IllegalArgumentException()
     val first = abs(end.row - start.row)
     val second = abs(end.column - start.column)
     return maxOf(first, second)
 }
+=======
+fun kingMoveNumber(start: Square, end: Square): Int = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Сложная (5 баллов)
@@ -190,6 +217,7 @@ fun kingMoveNumber(start: Square, end: Square): Int {
  *          kingTrajectory(Square(3, 5), Square(6, 2)) = listOf(Square(3, 5), Square(4, 4), Square(5, 3), Square(6, 2))
  * Если возможно несколько вариантов самой быстрой траектории, вернуть любой из них.
  */
+<<<<<<< HEAD
 fun kingTrajectory(start: Square, end: Square): List<Square> {
     if (!(start.inside() && end.inside())) throw IllegalArgumentException()
     val result = mutableListOf<Square>(start)
@@ -202,6 +230,9 @@ fun kingTrajectory(start: Square, end: Square): List<Square> {
     }
     return result
 }
+=======
+fun kingTrajectory(start: Square, end: Square): List<Square> = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Сложная (6 баллов)
@@ -226,7 +257,10 @@ fun kingTrajectory(start: Square, end: Square): List<Square> {
  * Пример: knightMoveNumber(Square(3, 1), Square(6, 3)) = 3.
  * Конь может последовательно пройти через клетки (5, 2) и (4, 4) к клетке (6, 3).
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 fun knightMoveNumber(start: Square, end: Square): Int = TODO()
 
 /**

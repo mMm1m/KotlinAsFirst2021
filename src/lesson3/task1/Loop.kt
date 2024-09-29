@@ -2,7 +2,10 @@
 
 package lesson3.task1
 
+<<<<<<< HEAD
 import lesson1.task1.sqr
+=======
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 import kotlin.math.sqrt
 
 // Урок 3: циклы
@@ -73,6 +76,7 @@ fun digitCountInNumber(n: Int, m: Int): Int =
  *
  * Использовать операции со строками в этой задаче запрещается.
  */
+<<<<<<< HEAD
 fun digitNumber(n: Int): Int {
     if (n == 0) return 1
     var x = n
@@ -83,6 +87,9 @@ fun digitNumber(n: Int): Int {
     }
     return k
 }
+=======
+fun digitNumber(n: Int): Int = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Простая (2 балла)
@@ -90,6 +97,7 @@ fun digitNumber(n: Int): Int {
  * Найти число Фибоначчи из ряда 1, 1, 2, 3, 5, 8, 13, 21, ... с номером n.
  * Ряд Фибоначчи определён следующим образом: fib(1) = 1, fib(2) = 1, fib(n+2) = fib(n) + fib(n+1)
  */
+<<<<<<< HEAD
 fun fib(n: Int): Int {
     if (n < 3) return 1
     var a = 1
@@ -101,12 +109,16 @@ fun fib(n: Int): Int {
     }
     return b
 }
+=======
+fun fib(n: Int): Int = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Простая (2 балла)
  *
  * Для заданного числа n > 1 найти минимальный делитель, превышающий 1
  */
+<<<<<<< HEAD
 fun minDivisor(n: Int): Int {
     if (isPrime(n)) return n
     var d = 2
@@ -116,13 +128,20 @@ fun minDivisor(n: Int): Int {
     }
     return d
 }
+=======
+fun minDivisor(n: Int): Int = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Простая (2 балла)
  *
  * Для заданного числа n > 1 найти максимальный делитель, меньший n
  */
+<<<<<<< HEAD
 fun maxDivisor(n: Int): Int = n / minDivisor(n)
+=======
+fun maxDivisor(n: Int): Int = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Простая (2 балла)
@@ -140,6 +159,7 @@ fun maxDivisor(n: Int): Int = n / minDivisor(n)
  * Написать функцию, которая находит, сколько шагов требуется для
  * этого для какого-либо начального X > 0.
  */
+<<<<<<< HEAD
 fun collatzSteps(x: Int): Int {
     var n = x
     var k = 0
@@ -150,6 +170,9 @@ fun collatzSteps(x: Int): Int {
     }
     return k
 }
+=======
+fun collatzSteps(x: Int): Int = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Средняя (3 балла)
@@ -157,8 +180,12 @@ fun collatzSteps(x: Int): Int {
  * Для заданных чисел m и n найти наименьшее общее кратное, то есть,
  * минимальное число k, которое делится и на m и на n без остатка
  */
+<<<<<<< HEAD
 fun lcm(m: Int, n: Int): Int = m / greatestCommonDivisor(m, n) * n
 
+=======
+fun lcm(m: Int, n: Int): Int = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Средняя (3 балла)
@@ -167,6 +194,7 @@ fun lcm(m: Int, n: Int): Int = m / greatestCommonDivisor(m, n) * n
  * Взаимно простые числа не имеют общих делителей, кроме 1.
  * Например, 25 и 49 взаимно простые, а 6 и 8 -- нет.
  */
+<<<<<<< HEAD
 
 fun greatestCommonDivisor(a: Int, b: Int): Int {
     var x1 = a
@@ -179,6 +207,9 @@ fun greatestCommonDivisor(a: Int, b: Int): Int {
 }
 
 fun isCoPrime(m: Int, n: Int): Boolean = greatestCommonDivisor(m, n) == 1
+=======
+fun isCoPrime(m: Int, n: Int): Boolean = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Средняя (3 балла)
@@ -187,6 +218,7 @@ fun isCoPrime(m: Int, n: Int): Boolean = greatestCommonDivisor(m, n) == 1
  *
  * Использовать операции со строками в этой задаче запрещается.
  */
+<<<<<<< HEAD
 fun revert(n: Int): Int {
     var x = n
     var reverted = 0
@@ -196,6 +228,9 @@ fun revert(n: Int): Int {
     }
     return reverted
 }
+=======
+fun revert(n: Int): Int = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Средняя (3 балла)
@@ -206,7 +241,11 @@ fun revert(n: Int): Int {
  *
  * Использовать операции со строками в этой задаче запрещается.
  */
+<<<<<<< HEAD
 fun isPalindrome(n: Int): Boolean = n == revert(n)
+=======
+fun isPalindrome(n: Int): Boolean = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Средняя (3 балла)
@@ -216,6 +255,7 @@ fun isPalindrome(n: Int): Boolean = n == revert(n)
  *
  * Использовать операции со строками в этой задаче запрещается.
  */
+<<<<<<< HEAD
 fun hasDifferentDigits(n: Int): Boolean {
     var lastDigit = -1
     var x = n
@@ -227,6 +267,9 @@ fun hasDifferentDigits(n: Int): Boolean {
     }
     return false
 }
+=======
+fun hasDifferentDigits(n: Int): Boolean = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Средняя (4 балла)
@@ -259,6 +302,7 @@ fun cos(x: Double, eps: Double): Double = TODO()
  *
  * Использовать операции со строками в этой задаче запрещается.
  */
+<<<<<<< HEAD
 
 fun getDigit(n: Int, f: (n: Int) -> Int): Int {
     var step = 1
@@ -280,6 +324,9 @@ fun getDigit(n: Int, f: (n: Int) -> Int): Int {
 }
 
 fun squareSequenceDigit(n: Int): Int = getDigit(n, ::sqr)
+=======
+fun squareSequenceDigit(n: Int): Int = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
 /**
  * Сложная (5 баллов)
@@ -290,4 +337,8 @@ fun squareSequenceDigit(n: Int): Int = getDigit(n, ::sqr)
  *
  * Использовать операции со строками в этой задаче запрещается.
  */
+<<<<<<< HEAD
 fun fibSequenceDigit(n: Int): Int = getDigit(n, ::fib)
+=======
+fun fibSequenceDigit(n: Int): Int = TODO()
+>>>>>>> 1137b420cc95fa6894edad69b31e2da1bb985d1d
